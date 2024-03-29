@@ -45,6 +45,10 @@ hr{
     width: 100%;
 }
 
+main span{
+    font-weight: 600;
+}
+
 main h1,
 section h2{
     font-family: 'Young Serif', 'Helvetica Neue';
@@ -69,7 +73,8 @@ section h2{
 ul li,
 ol li,
 main p,
-section h3{
+section h3,
+table tbody{
     font-family: 'Outfit';
 }
 
@@ -95,9 +100,24 @@ main p{
 .preparation{
     background-color: var(--Rose--White);
     margin: 35px 0;
-    padding: 30px;
+    padding: 27px;
+    border-radius: 10px;
 }
 
-.preparation ul{
-    list-style: inside;
+.preparation h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #773A54;
+    margin-bottom: 15px;
 }
+
+section ul{
+    list-style: inside;
+    padding-left: 7px;
+    width: 100%;
+}
+
+section ul li{
+    margin-bottom: 10px;
+}
+
