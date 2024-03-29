@@ -1,0 +1,31 @@
+body{
+    background-color: #F3E5D8;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: auto;
+    max-width: 680px;
+    height: auto;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    gap: 40px;
+}
+
+hr{
+    border-top: 3px solid #bbb;
+}
+
+.img_container{
+    background-color: #F3E5D8;
+}
+
+h1{
+    font-family: 'Young Serif';
+    font-weight: 600;
+}
