@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Young Serif';
-    src: url('./assets/fonts/young-serif/YoungSerif-Regular.woff') format('woff');
-    src: url('./assets/fonts/young-serif/YoungSerif-Regular.woff2') format('woff2');
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.woff') format('woff'),
+    url('./assets/fonts/young-serif/YoungSerif-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Outfit';
-    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.woff') format("woff");
-    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.woff2') format('woff2')
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.woff') format("woff"),
+    ('./assets/fonts/outfit/Outfit-VariableFont_wght.woff2') format('woff2')
 }
 
 :root{
@@ -43,11 +43,6 @@ main{
     background-color: var(--White);
 }
 
-hr{
-    border-top: 1px solid var(--White--Coffe);
-    margin: 32px 0;
-}
-
 main span{
     font-weight: 600;
 }
@@ -74,11 +69,12 @@ section h2{
     color: var(--Brandy--Red);
 }
 
-ul li,
-ol li,
-main p,
-section h3,
-table tbody{
+hr{
+    border-top: 1px solid var(--White--Coffe);
+    margin: 32px 0;
+}
+
+*{
     font-family: 'Outfit';
 }
 
@@ -89,6 +85,8 @@ main p{
     font-weight: 300;
     line-height: 1.5rem;
 }
+
+                /* IMAGE */
 
 .img_container{
     overflow: hidden;
