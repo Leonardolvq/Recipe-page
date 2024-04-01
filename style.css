@@ -18,6 +18,9 @@
 --Light--Grey: hsl(30, 18%, 87%);
 --Wenge--Brown: hsl(30, 10%, 34%);
 --Dark--Charcoal: hsl(24, 5%, 18%);
+--Dark--Raspberry: #7A284E;
+--Brandy--Red: #854632;
+--White--Coffe: #E3DDD7;
 }
 
 body{
@@ -41,8 +44,9 @@ main{
 }
 
 hr{
-    border-top: 1px solid #bbb;
+    border-top: 1px solid var(--White--Coffe);
     width: 100%;
+    margin: 32px 0;
 }
 
 main span{
@@ -57,7 +61,7 @@ section h2{
 
 main h1,
 section h2{
-    margin: 38px 0 23px 0;
+    margin: 40px 0 23px 0;
 }
 
 main h1{
@@ -66,8 +70,9 @@ main h1{
 }
 
 section h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 400;
+    color: var(--Brandy--Red);
 }
 
 ul li,
@@ -100,24 +105,111 @@ main p{
 .preparation{
     background-color: var(--Rose--White);
     margin: 35px 0;
-    padding: 27px;
+    padding: 28px;
     border-radius: 10px;
 }
 
 .preparation h3{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    color: #773A54;
+    color: var(--Dark--Raspberry);
     margin-bottom: 15px;
 }
 
-section ul{
-    list-style: inside;
+.preparation ul{
     padding-left: 7px;
     width: 100%;
 }
 
 section ul li{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-left: 8px;
 }
 
+section ul li::before{
+    content: "•";
+    margin-right: 28px;
+    color: var(--Dark--Raspberry);
+    font-size: 1.5rem;
+    display: inline-block; 
+    margin-right: 16px;
+}
+
+.ingredients::before{
+    color: var(--Brandy--Red);
+}
+                /* INSTRUCTION */
+                
+.instructions ol{
+    counter-reset: item; /* initialize the counter of 'item' */
+}
+
+.instructions ol li{
+    list-style-type: none;
+    counter-increment: item; /* Increment the 'item' counter */
+    text-indent: -1.2em;
+    padding-left: 40px;
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.instructions ol li::before{
+    content: counter(item) ". "; /* Display the value of the 'item' counter + ". " */
+    font-weight: 600;
+    color: var(--Brandy--Red);
+    display: inline-block; 
+    margin-right: 16px;
+}
+
+                /* TABLE */
+
+.nutrition_table{
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.nutrition_table tr {
+    border-bottom: 1px solid var(--White--Coffe);
+}
+
+.nutrition_table tr td{
+    padding: 15px 0;
+    width: 50%;
+}
+
+.nutrition_table tr td:first-child{
+    padding-left: 20px;
+}
+
+.nutrition_table tr:last-of-type{
+    border: none;
+}
+
+td span{
+    color: var(--Brandy--Red);
+}
+
+.attribution{
+    margin: 32px 0;
+}
+
+@media screen and (max-width: 767px) {
+    
+    body{
+        padding: none;
+        background-color: var(--White);
+    }
+
+    main{
+        padding: 32px;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .img_container{
+        width: 100%;
+    }
+}
