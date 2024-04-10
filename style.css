@@ -44,7 +44,7 @@ main{
 }
 
 main span{
-    font-weight: 600;
+    font-weight: 800;
 }
 
 main h1,
@@ -60,12 +60,12 @@ section h2{
 
 main h1{
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 section h2{
     font-size: 1.7rem;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--Brandy--Red);
 }
 
@@ -82,7 +82,7 @@ ul li,
 ol li,
 main p{
     color: var(--Wenge--Brown);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5rem;
 }
 
@@ -110,7 +110,7 @@ main p{
 
 .preparation h3{
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--Dark--Raspberry);
     margin-bottom: 15px;
 }
@@ -156,7 +156,7 @@ section ul li::before{
 
 .instructions ol li::before{
     content: counter(item) ". "; /* Display the value of the 'item' counter + ". " */
-    font-weight: 600;
+    font-weight: 800;
     color: var(--Brandy--Red);
     display: inline-block; 
     margin-right: 16px;
