@@ -1,14 +1,9 @@
 @font-face {
     font-family: 'Young Serif';
     src: url('./assets/fonts/young-serif/YoungSerif-Regular.woff') format('woff'),
-    url('./assets/fonts/young-serif/YoungSerif-Regular.woff2') format('woff2');
+        url('./assets/fonts/young-serif/YoungSerif-Regular.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: 'Outfit';
-    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.woff') format("woff"),
-    ('./assets/fonts/outfit/Outfit-VariableFont_wght.woff2') format('woff2')
-}
 
 :root{
 
@@ -43,10 +38,6 @@ main{
     background-color: var(--White);
 }
 
-main span{
-    font-weight: 800;
-}
-
 main h1,
 section h2{
     font-family: 'Young Serif', 'Helvetica Neue';
@@ -55,17 +46,18 @@ section h2{
 
 main h1,
 section h2{
-    margin: 40px 0 23px 0;
+    margin-bottom: 23px;
 }
 
 main h1{
     font-size: 2.5rem;
     font-weight: 600;
+    margin-top: 40px;
 }
 
 section h2{
     font-size: 1.7rem;
-    font-weight: 600;
+    font-weight: 300;
     color: var(--Brandy--Red);
 }
 
@@ -75,7 +67,7 @@ hr{
 }
 
 *{
-    font-family: 'Outfit';
+    font-family: "Outfit", sans-serif;
 }
 
 ul li,
@@ -103,14 +95,15 @@ main p{
 
 .preparation{
     background-color: var(--Rose--White);
-    margin: 35px 0;
+    margin: 40px 0;
     padding: 28px;
     border-radius: 10px;
 }
 
 .preparation h3{
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 700;
+    font-family: 'Outfit';
     color: var(--Dark--Raspberry);
     margin-bottom: 15px;
 }
@@ -156,7 +149,7 @@ section ul li::before{
 
 .instructions ol li::before{
     content: counter(item) ". "; /* Display the value of the 'item' counter + ". " */
-    font-weight: 800;
+    font-weight: 700;
     color: var(--Brandy--Red);
     display: inline-block; 
     margin-right: 16px;
@@ -187,8 +180,13 @@ section ul li::before{
     border: none;
 }
 
+li span{
+    font-weight: 700;
+}
+
 td span{
     color: var(--Brandy--Red);
+    font-weight: 700;
 }
 
                 /* FOOTER */
